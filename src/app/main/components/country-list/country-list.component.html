@@ -1,0 +1,23 @@
+<h4 class="float-left">
+    List of Countries
+</h4>
+<table class="table table-striped">
+<thead>
+    <tr>
+        <th scope="col">Code</th>
+        <th scope="col">Name</th>
+        <th scope="col">Region</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let country of countryList; index as i">
+        <td>
+            <a [routerLink]="['/teams',country.code]" title="view list of teams">
+                {{country.code}}
+            </a>
+        </td>
+        <td>{{country.name}}</td>
+        <td>{{country.region}}</td>
+    </tr>
+</tbody>
+</table>

@@ -1,0 +1,14 @@
+.footer {
+    height: 60px;
+    width: 97.9vw;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    flex-direction: column;
+  }
+  hr {
+      height:2px;
+      color:gray;
+      width: 100%;
+  }

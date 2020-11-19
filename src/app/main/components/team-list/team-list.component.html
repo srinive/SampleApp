@@ -1,0 +1,29 @@
+<div class="btn btn-sm btn-link float-right ml-2">
+    <a [routerLink]="['']" title="back to list of countries">
+        List of Countries
+    </a>
+</div>
+<h4 class="float-left">
+    List of Teams [{{countryCode}}]
+</h4>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let team of teamList; index as i">
+            <td>{{team.team}}</td>
+            <td>{{team.address}}</td>
+            <td>{{team.email}}</td>
+        </tr>
+        <tr *ngIf="teamList.length<1">
+            <td colspan="3" class="alert alert-warning center">
+                No teams found in the country {{countryCode}}
+            </td>
+        </tr>
+    </tbody>
+    </table>
