@@ -4,8 +4,10 @@ Sample App
 
 ## Set up project first time
 
-  Clone/Download the Repository 
+  Clone/Download the Repository
+  
   Open the project folder with Visual Studio Code
+  
   Run 'npm install'
   
 ## Development server
